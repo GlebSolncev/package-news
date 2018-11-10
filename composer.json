@@ -1,13 +1,13 @@
 {
-    "name": "litecms/news",
-    "description": "News package for litecms.",
-    "keywords": ["lavalite", "News"],
+    "name": "gs/news",
+    "description": "News package for gs.",
+    "keywords": ["GlebSolncev", "News"],
     "license": "MIT",
-    "type": "lavalite-package",
+    "type": "packages-news",
     "authors": [
         {
-            "name": "Lavalite",
-            "email": "info@lavalite.org"
+            "name": "GlebSolncev",
+            "email": "yamokasy2@gmail.com"
         }
     ],
     "require": {
