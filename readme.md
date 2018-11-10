@@ -4,7 +4,7 @@ Laravel package that provides news management facility for lavalite CMS.
 
 Require this package with composer. 
 
-    composer require litecms/news
+    composer require glebs/news
 
 Laravel 5.5 uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider.
 
