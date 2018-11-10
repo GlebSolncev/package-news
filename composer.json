@@ -1,6 +1,6 @@
 {
-    "name": "gs/news",
-    "description": "News package for gs.",
+    "name": "glebs/news",
+    "description": "News package for GlebSOlncev.",
     "keywords": ["GlebSolncev", "News"],
     "license": "MIT",
     "type": "packages-news",
