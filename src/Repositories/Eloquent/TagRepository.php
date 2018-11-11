@@ -1,8 +1,8 @@
 <?php
 
-namespace Litecms\News\Repositories\Eloquent;
+namespace gscms\News\Repositories\Eloquent;
 
-use Litecms\News\Interfaces\TagRepositoryInterface;
+use gscms\News\Interfaces\TagRepositoryInterface;
 use Litepie\Repository\Eloquent\BaseRepository;
 
 class TagRepository extends BaseRepository implements TagRepositoryInterface
@@ -11,7 +11,7 @@ class TagRepository extends BaseRepository implements TagRepositoryInterface
 
     public function boot()
     {
-        $this->fieldSearchable = config('litecms.news.tag.model.search');
+        $this->fieldSearchable = config('gscms.news.tag.model.search');
 
     }
 
@@ -22,7 +22,7 @@ class TagRepository extends BaseRepository implements TagRepositoryInterface
      */
     public function model()
     {
-        return config('litecms.news.tag.model.model');
+        return config('gscms.news.tag.model.model');
     }
 
      public function selectTags()

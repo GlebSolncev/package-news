@@ -1,12 +1,12 @@
 <?php
 
-namespace Litecms\News\Http\Controllers;
+namespace gscms\News\Http\Controllers;
 
 use App\Http\Controllers\ResourceController as BaseController;
 use Form;
-use Litecms\News\Http\Requests\CommentRequest;
-use Litecms\News\Interfaces\CommentRepositoryInterface;
-use Litecms\News\Models\Comment;
+use gscms\News\Http\Requests\CommentRequest;
+use gscms\News\Interfaces\CommentRepositoryInterface;
+use gscms\News\Models\Comment;
 
 /**
  * Resource controller class for comment.
@@ -27,7 +27,7 @@ class CommentResourceController extends BaseController
         $this->repository = $comment;
         $this->repository
             ->pushCriteria(\Litepie\Repository\Criteria\RequestCriteria::class)
-            ->pushCriteria(\Litecms\News\Repositories\Criteria\CommentResourceCriteria::class);
+            ->pushCriteria(\gscms\News\Repositories\Criteria\CommentResourceCriteria::class);
     }
 
     /**
@@ -42,7 +42,7 @@ class CommentResourceController extends BaseController
         if ($this->response->typeIs('json')) {
             $function = camel_case('get-' . $view);
             return $this->repository
-                ->setPresenter(\Litecms\News\Repositories\Presenter\CommentPresenter::class)
+                ->setPresenter(\gscms\News\Repositories\Presenter\CommentPresenter::class)
                 ->$function();
         }
 

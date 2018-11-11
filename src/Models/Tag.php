@@ -1,6 +1,6 @@
 <?php
 
-namespace Litecms\News\Models;
+namespace gscms\News\Models;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Litepie\Database\Model;
@@ -20,9 +20,9 @@ class Tag extends Model
      *
      * @var array
      */
-     protected $config = 'litecms.news.tag.model';
+     protected $config = 'gscms.news.tag.model';
 
 public function tags(){
-        return $this->hasMany('Litecms\News\Models\Tag');
+        return $this->hasMany('gscms\News\Models\Tag');
     }
 }

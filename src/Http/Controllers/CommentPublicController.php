@@ -1,9 +1,9 @@
 <?php
 
-namespace Litecms\News\Http\Controllers;
+namespace gscms\News\Http\Controllers;
 
 use App\Http\Controllers\PublicController as BaseController;
-use Litecms\News\Interfaces\CommentRepositoryInterface;
+use gscms\News\Interfaces\CommentRepositoryInterface;
 
 class CommentPublicController extends BaseController
 {
@@ -12,7 +12,7 @@ class CommentPublicController extends BaseController
     /**
      * Constructor.
      *
-     * @param type \Litecms\Comment\Interfaces\CommentRepositoryInterface $comment
+     * @param type \gscms\Comment\Interfaces\CommentRepositoryInterface $comment
      *
      * @return type
      */

@@ -18,16 +18,16 @@
             "database/seeds"
         ],
         "psr-4": {
-            "Litecms\\News\\": "src"
+            "gscms\\News\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Litecms\\News\\Providers\\NewsServiceProvider"
+                "gscms\\News\\Providers\\NewsServiceProvider"
             ],
             "aliases": {
-                "News"         : "Litecms\\News\\Facades\\News"
+                "News"         : "gscms\\News\\Facades\\News"
             }
         }
     },

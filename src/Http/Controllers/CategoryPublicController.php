@@ -1,9 +1,9 @@
 <?php
 
-namespace Litecms\News\Http\Controllers;
+namespace gscms\News\Http\Controllers;
 
 use App\Http\Controllers\PublicController as BaseController;
-use Litecms\News\Interfaces\CategoryRepositoryInterface;
+use gscms\News\Interfaces\CategoryRepositoryInterface;
 
 class CategoryPublicController extends BaseController
 {
@@ -12,7 +12,7 @@ class CategoryPublicController extends BaseController
     /**
      * Constructor.
      *
-     * @param type \Litecms\Category\Interfaces\CategoryRepositoryInterface $category
+     * @param type \gscms\Category\Interfaces\CategoryRepositoryInterface $category
      *
      * @return type
      */

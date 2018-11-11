@@ -1,8 +1,8 @@
 <?php
 
-namespace Litecms\News\Repositories\Eloquent;
+namespace gscms\News\Repositories\Eloquent;
 
-use Litecms\News\Interfaces\CommentRepositoryInterface;
+use gscms\News\Interfaces\CommentRepositoryInterface;
 use Litepie\Repository\Eloquent\BaseRepository;
 
 class CommentRepository extends BaseRepository implements CommentRepositoryInterface
@@ -11,7 +11,7 @@ class CommentRepository extends BaseRepository implements CommentRepositoryInter
 
     public function boot()
     {
-        $this->fieldSearchable = config('litecms.news.comment.model.search');
+        $this->fieldSearchable = config('gscms.news.comment.model.search');
 
     }
 
@@ -22,6 +22,6 @@ class CommentRepository extends BaseRepository implements CommentRepositoryInter
      */
     public function model()
     {
-        return config('litecms.news.comment.model.model');
+        return config('gscms.news.comment.model.model');
     }
 }

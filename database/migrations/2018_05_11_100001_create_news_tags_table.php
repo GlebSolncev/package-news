@@ -18,7 +18,7 @@ class CreateNewsTagsTable extends Migration
         /*
          * Table: tags
          */
-        Schema::create(config('litecms.news.tag.model.table'), function ($table) {
+        Schema::create(config('gscms.news.tag.model.table'), function ($table) {
             $table->increments('id');
             $table->string('name', 255)->nullable();
             $table->integer('frequency')->nullable();
@@ -37,6 +37,6 @@ class CreateNewsTagsTable extends Migration
 
     public function down()
     {
-        Schema::drop(config('litecms.news.tag.model.table'));
+        Schema::drop(config('gscms.news.tag.model.table'));
     }
 }

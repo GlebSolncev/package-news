@@ -1,6 +1,6 @@
 <?php
 
-namespace Litecms\News\Models;
+namespace gscms\News\Models;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Litepie\Database\Model;
@@ -20,14 +20,14 @@ class News extends Model
      *
      * @var array
      */
-     protected $config = 'litecms.news.news.model';
+     protected $config = 'gscms.news.news.model';
 
 
     /**
      * The category that belong to the news.
      */
     public function category(){
-        return $this->belongsTo('Litecms\News\Models\Category');
+        return $this->belongsTo('gscms\News\Models\Category');
     }
 
 
@@ -35,7 +35,7 @@ class News extends Model
      * The comments that belong to the news.
      */
     public function comments(){
-        return $this->hasMany('Litecms\News\Models\Comment');
+        return $this->hasMany('gscms\News\Models\Comment');
     }
 
     public function setTagAttribute($tag)
@@ -51,7 +51,7 @@ class News extends Model
      * The tags that belong to the news.
      */
     public function tags(){
-        return $this->hasMany('Litecms\News\Models\Tag');
+        return $this->hasMany('gscms\News\Models\Tag');
     }
 
     public function user(){

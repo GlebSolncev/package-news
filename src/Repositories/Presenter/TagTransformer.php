@@ -1,13 +1,13 @@
 <?php
 
-namespace Litecms\News\Repositories\Presenter;
+namespace gscms\News\Repositories\Presenter;
 
 use League\Fractal\TransformerAbstract;
 use Hashids;
 
 class TagTransformer extends TransformerAbstract
 {
-    public function transform(\Litecms\News\Models\Tag $tag)
+    public function transform(\gscms\News\Models\Tag $tag)
     {
         return [
             'id'                => $tag->getRouteKey(),

@@ -1,6 +1,6 @@
 <?php
 
-namespace Litecms\News\Providers;
+namespace gscms\News\Providers;
 
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -14,13 +14,13 @@ class AuthServiceProvider extends ServiceProvider
      */
     protected $policies = [
         // Bind News policy
-        'Litecms\News\Models\News' => \Litecms\News\Policies\NewsPolicy::class,
+        'gscms\News\Models\News' => \gscms\News\Policies\NewsPolicy::class,
 // Bind Category policy
-        'Litecms\News\Models\Category' => \Litecms\News\Policies\CategoryPolicy::class,
+        'gscms\News\Models\Category' => \gscms\News\Policies\CategoryPolicy::class,
 // Bind Comment policy
-        'Litecms\News\Models\Comment' => \Litecms\News\Policies\CommentPolicy::class,
+        'gscms\News\Models\Comment' => \gscms\News\Policies\CommentPolicy::class,
 // Bind Tag policy
-        'Litecms\News\Models\Tag' => \Litecms\News\Policies\TagPolicy::class,
+        'gscms\News\Models\Tag' => \gscms\News\Policies\TagPolicy::class,
     ];
 
     /**

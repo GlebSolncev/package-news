@@ -18,7 +18,7 @@ class CreateNewsCommentsTable extends Migration
         /*
          * Table: comments
          */
-        Schema::create(config('litecms.news.comment.model.table'), function ($table) {
+        Schema::create(config('gscms.news.comment.model.table'), function ($table) {
             $table->increments('id');
             $table->longText('comment')->nullable();
             $table->string('author', 255)->nullable();
@@ -42,6 +42,6 @@ class CreateNewsCommentsTable extends Migration
 
     public function down()
     {
-        Schema::drop(config('litecms.news.comment.model.table'));
+        Schema::drop(config('gscms.news.comment.model.table'));
     }
 }

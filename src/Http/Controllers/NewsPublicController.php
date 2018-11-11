@@ -1,9 +1,9 @@
 <?php
 
-namespace Litecms\News\Http\Controllers;
+namespace gscms\News\Http\Controllers;
 
 use App\Http\Controllers\PublicController as BaseController;
-use Litecms\News\Interfaces\NewsRepositoryInterface;
+use gscms\News\Interfaces\NewsRepositoryInterface;
 use Illuminate\Support\Facades\DB;
 
 class NewsPublicController extends BaseController
@@ -13,7 +13,7 @@ class NewsPublicController extends BaseController
     /**
      * Constructor.
      *
-     * @param type \Litecms\News\Interfaces\NewsRepositoryInterface $news
+     * @param type \gscms\News\Interfaces\NewsRepositoryInterface $news
      *
      * @return type
      */

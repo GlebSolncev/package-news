@@ -5,7 +5,7 @@ return [
     /**
      * Provider.
      */
-    'provider'  => 'litecms',
+    'provider'  => 'gscms',
 
     /*
      * Package.
@@ -22,9 +22,9 @@ return [
 
     'news'       => [
         'model' => [
-            'model'                 => \Litecms\News\Models\News::class,
+            'model'                 => \gscms\News\Models\News::class,
             'table'                 => 'news',
-            'presenter'             => \Litecms\News\Repositories\Presenter\NewsPresenter::class,
+            'presenter'             => \gscms\News\Repositories\Presenter\NewsPresenter::class,
             'hidden'                => [],
             'visible'               => [],
             'guarded'               => ['*'],
@@ -64,7 +64,7 @@ return [
         ],
 
         'controller' => [
-            'provider'  => 'Litecms',
+            'provider'  => 'gscms',
             'package'   => 'News',
             'module'    => 'News',
         ],
@@ -73,9 +73,9 @@ return [
 
     'category'       => [
         'model' => [
-            'model'                 => \Litecms\News\Models\Category::class,
+            'model'                 => \gscms\News\Models\Category::class,
             'table'                 => 'news_categories',
-            'presenter'             => \Litecms\News\Repositories\Presenter\CategoryPresenter::class,
+            'presenter'             => \gscms\News\Repositories\Presenter\CategoryPresenter::class,
             'hidden'                => [],
             'visible'               => [],
             'guarded'               => ['*'],
@@ -114,7 +114,7 @@ return [
         ],
 
         'controller' => [
-            'provider'  => 'Litecms',
+            'provider'  => 'gscms',
             'package'   => 'News',
             'module'    => 'Category',
         ],
@@ -123,9 +123,9 @@ return [
 
     'comment'       => [
         'model' => [
-            'model'                 => \Litecms\News\Models\Comment::class,
+            'model'                 => \gscms\News\Models\Comment::class,
             'table'                 => 'news_comments',
-            'presenter'             => \Litecms\News\Repositories\Presenter\CommentPresenter::class,
+            'presenter'             => \gscms\News\Repositories\Presenter\CommentPresenter::class,
             'hidden'                => [],
             'visible'               => [],
             'guarded'               => ['*'],
@@ -164,7 +164,7 @@ return [
         ],
 
         'controller' => [
-            'provider'  => 'Litecms',
+            'provider'  => 'gscms',
             'package'   => 'News',
             'module'    => 'Comment',
         ],
@@ -173,9 +173,9 @@ return [
 
     'tag'       => [
         'model' => [
-            'model'                 => \Litecms\News\Models\Tag::class,
+            'model'                 => \gscms\News\Models\Tag::class,
             'table'                 => 'news_tags',
-            'presenter'             => \Litecms\News\Repositories\Presenter\TagPresenter::class,
+            'presenter'             => \gscms\News\Repositories\Presenter\TagPresenter::class,
             'hidden'                => [],
             'visible'               => [],
             'guarded'               => ['*'],
@@ -214,7 +214,7 @@ return [
         ],
 
         'controller' => [
-            'provider'  => 'Litecms',
+            'provider'  => 'gscms',
             'package'   => 'News',
             'module'    => 'Tag',
         ],

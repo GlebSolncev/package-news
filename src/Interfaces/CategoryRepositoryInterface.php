@@ -1,6 +1,6 @@
 <?php
 
-namespace Litecms\News\Interfaces;
+namespace gscms\News\Interfaces;
 
 interface CategoryRepositoryInterface
 {

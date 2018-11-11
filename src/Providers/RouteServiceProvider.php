@@ -1,10 +1,10 @@
 <?php
 
-namespace Litecms\News\Providers;
+namespace gscms\News\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Routing\Router;
-use Litecms\News\Models\News;
+use gscms\News\Models\News;
 use Request;
 use Route;
 
@@ -17,7 +17,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'Litecms\News\Http\Controllers';
+    protected $namespace = 'gscms\News\Http\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.
@@ -31,28 +31,28 @@ class RouteServiceProvider extends ServiceProvider
 
         if (Request::is('*/news/news/*')) {
             Route::bind('news', function ($news) {
-                $newsrepo = $this->app->make('Litecms\News\Interfaces\NewsRepositoryInterface');
+                $newsrepo = $this->app->make('gscms\News\Interfaces\NewsRepositoryInterface');
                 return $newsrepo->findorNew($news);
             });
         }
 
         if (Request::is('*/news/category/*')) {
             Route::bind('category', function ($category) {
-                $categoryrepo = $this->app->make('Litecms\News\Interfaces\CategoryRepositoryInterface');
+                $categoryrepo = $this->app->make('gscms\News\Interfaces\CategoryRepositoryInterface');
                 return $categoryrepo->findorNew($category);
             });
         }
 
         if (Request::is('*/news/comment/*')) {
             Route::bind('comment', function ($comment) {
-                $commentrepo = $this->app->make('Litecms\News\Interfaces\CommentRepositoryInterface');
+                $commentrepo = $this->app->make('gscms\News\Interfaces\CommentRepositoryInterface');
                 return $commentrepo->findorNew($comment);
             });
         }
 
         if (Request::is('*/news/tag/*')) {
             Route::bind('tag', function ($tag) {
-                $tagrepo = $this->app->make('Litecms\News\Interfaces\TagRepositoryInterface');
+                $tagrepo = $this->app->make('gscms\News\Interfaces\TagRepositoryInterface');
                 return $tagrepo->findorNew($tag);
             });
         }

@@ -14,63 +14,63 @@ return [
     /**
      * Singlular and plural name of the module
      */
-    'name'          => 'Comment',
-    'names'         => 'Comments',
+    'name'          => 'Комментарий',
+    'names'         => 'Комментарии',
     
     /**
      * Singlular and plural name of the module
      */
     'title'         => [
-        'main'  => 'Comments',
-        'sub'   => 'Comments',
-        'list'  => 'Список comments',
-        'Редактировать'  => 'Редактировать comment',
-        'create'    => 'Создать comment'
+        'main'  => 'Комментарии',
+        'sub'   => 'Комментарии',
+        'list'  => 'Список комментариев',
+        'Редактировать'  => 'Редактировать комментарий',
+        'create'    => 'Создать комментарий'
     ],
 
     /**
      * Options for select/radio/check.
      */
     'options'       => [
-            'published'           => ['yes','no'],
+            'published'           => ['да','нет'],
     ],
 
     /**
      * Placeholder for inputs
      */
     'placeholder'   => [
-        'id'                         => 'Please enter id',
-        'comment'                    => 'Please enter comment',
-        'author'                     => 'Please enter author',
-        'email'                      => 'Please enter email',
-        'mobile'                     => 'Please enter mobile',
-        'slug'                       => 'Please enter slug',
-        'published'                  => 'Please select published',
-        'user_id'                    => 'Please enter user id',
-        'user_type'                  => 'Please enter user type',
-        'Новости_id'                    => 'Please enter Новости id',
-        'created_at'                 => 'Please select created at',
-        'updated_at'                 => 'Please select updated at',
-        'deleted_at'                 => 'Please select deleted at',
+        'id'                         => 'Введите id',
+        'comment'                    => 'Введите comment',
+        'author'                     => 'Введите author',
+        'email'                      => 'Введите email',
+        'mobile'                     => 'Введите mobile',
+        'slug'                       => 'Введите slug',
+        'published'                  => 'Выбрать published',
+        'user_id'                    => 'Введите user id',
+        'user_type'                  => 'Введите user type',
+        'Новости_id'                    => 'Введите Новости id',
+        'created_at'                 => 'Выбрать created at',
+        'updated_at'                 => 'Выбрать updated at',
+        'deleted_at'                 => 'Выбрать deleted at',
     ],
 
     /**
      * Labels for inputs.
      */
     'label'         => [
-        'id'                         => 'Id',
-        'comment'                    => 'Comment',
-        'author'                     => 'Author',
-        'email'                      => 'Email',
-        'mobile'                     => 'Mobile',
+        'id'                         => 'Номер',
+        'comment'                    => 'Комментарий',
+        'author'                     => 'Автор',
+        'email'                      => 'Почта',
+        'mobile'                     => 'Телефон',
         'slug'                       => 'Slug',
-        'published'                  => 'Published',
-        'user_id'                    => 'User id',
-        'user_type'                  => 'User type',
+        'published'                  => 'Отображение',
+        'user_id'                    => 'Номер пользователя',
+        'user_type'                  => 'Тип пользователя',
         'Новости_id'                    => 'Новости id',
-        'created_at'                 => 'Created at',
-        'updated_at'                 => 'Updated at',
-        'deleted_at'                 => 'Deleted at',
+        'created_at'                 => 'Дата создания',
+        'updated_at'                 => 'Дата редактирования',
+        'deleted_at'                 => 'Дата удаления',
     ],
 
     /**

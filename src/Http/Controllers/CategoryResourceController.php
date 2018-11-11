@@ -1,12 +1,12 @@
 <?php
 
-namespace Litecms\News\Http\Controllers;
+namespace gscms\News\Http\Controllers;
 
 use App\Http\Controllers\ResourceController as BaseController;
 use Form;
-use Litecms\News\Http\Requests\CategoryRequest;
-use Litecms\News\Interfaces\CategoryRepositoryInterface;
-use Litecms\News\Models\Category;
+use gscms\News\Http\Requests\CategoryRequest;
+use gscms\News\Interfaces\CategoryRepositoryInterface;
+use gscms\News\Models\Category;
 
 /**
  * Resource controller class for category.
@@ -27,7 +27,7 @@ class CategoryResourceController extends BaseController
         $this->repository = $category;
         $this->repository
             ->pushCriteria(\Litepie\Repository\Criteria\RequestCriteria::class)
-            ->pushCriteria(\Litecms\News\Repositories\Criteria\CategoryResourceCriteria::class);
+            ->pushCriteria(\gscms\News\Repositories\Criteria\CategoryResourceCriteria::class);
     }
 
     /**
@@ -42,7 +42,7 @@ class CategoryResourceController extends BaseController
         if ($this->response->typeIs('json')) {
             $function = camel_case('get-' . $view);
             return $this->repository
-                ->setPresenter(\Litecms\News\Repositories\Presenter\CategoryPresenter::class)
+                ->setPresenter(\gscms\News\Repositories\Presenter\CategoryPresenter::class)
                 ->$function();
         }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Litecms\News;
+namespace gscms\News;
 
 use User;
 
@@ -26,10 +26,10 @@ class News
     /**
      * Constructor.
      */
-    public function __construct(\Litecms\News\Interfaces\NewsRepositoryInterface $news,
-        \Litecms\News\Interfaces\CategoryRepositoryInterface $category,
-        \Litecms\News\Interfaces\CommentRepositoryInterface $comment,
-        \Litecms\News\Interfaces\TagRepositoryInterface $tag)
+    public function __construct(\gscms\News\Interfaces\NewsRepositoryInterface $news,
+        \gscms\News\Interfaces\CategoryRepositoryInterface $category,
+        \gscms\News\Interfaces\CommentRepositoryInterface $comment,
+        \gscms\News\Interfaces\TagRepositoryInterface $tag)
     {
         $this->news = $news;
         $this->category = $category;
@@ -62,7 +62,7 @@ class News
     // {
 
     //     if (User::hasRole('user')) {
-    //         $this->news->pushCriteria(new \Litepie\Litecms\Repositories\Criteria\NewsUserCriteria());
+    //         $this->news->pushCriteria(new \Litepie\gscms\Repositories\Criteria\NewsUserCriteria());
     //     }
 
     //     $news = $this->news->scopeQuery(function ($query) use ($count) {
@@ -84,7 +84,7 @@ class News
     {
 
         if (User::hasRole('user')) {
-            $this->category->pushCriteria(new \Litepie\Litecms\Repositories\Criteria\CategoryUserCriteria());
+            $this->category->pushCriteria(new \Litepie\gscms\Repositories\Criteria\CategoryUserCriteria());
         }
 
         $category = $this->category->scopeQuery(function ($query) use ($count) {
@@ -106,7 +106,7 @@ class News
     // {
 
     //     if (User::hasRole('user')) {
-    //         $this->comment->pushCriteria(new \Litepie\Litecms\Repositories\Criteria\CommentUserCriteria());
+    //         $this->comment->pushCriteria(new \Litepie\gscms\Repositories\Criteria\CommentUserCriteria());
     //     }
 
     //     $comment = $this->comment->scopeQuery(function ($query) use ($count) {
@@ -128,7 +128,7 @@ class News
     // {
 
     //     if (User::hasRole('user')) {
-    //         $this->tag->pushCriteria(new \Litepie\Litecms\Repositories\Criteria\TagUserCriteria());
+    //         $this->tag->pushCriteria(new \Litepie\gscms\Repositories\Criteria\TagUserCriteria());
     //     }
 
     //     $tag = $this->tag->scopeQuery(function ($query) use ($count) {

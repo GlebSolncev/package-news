@@ -18,7 +18,7 @@ class CreateNewsCategoriesTable extends Migration
         /*
          * Table: categories
          */
-        Schema::create(config('litecms.news.category.model.table'), function ($table) {
+        Schema::create(config('gscms.news.category.model.table'), function ($table) {
             $table->increments('id');
             $table->string('name', 255)->nullable();
             $table->string('slug', 255)->nullable();
@@ -39,6 +39,6 @@ class CreateNewsCategoriesTable extends Migration
 
     public function down()
     {
-        Schema::drop(config('litecms.news.category.model.table'));
+        Schema::drop(config('gscms.news.category.model.table'));
     }
 }

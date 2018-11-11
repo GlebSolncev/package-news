@@ -1,6 +1,6 @@
 <?php
 
-namespace Litecms;
+namespace gscms;
 
 use DB;
 use Illuminate\Database\Seeder;
@@ -9,7 +9,7 @@ class NewsCategoryTableSeeder extends Seeder
 {
     public function run()
     {
-        DB::table(config('litecms.news.category.model.table'))->insert([
+        DB::table(config('gscms.news.category.model.table'))->insert([
             ['id' => '1', 'name' => 'Weather', 'slug' => 'weather', 'status' => 'show', 'user_type' => 'App\\User', 'user_id' => '1', 'upload_folder' => null, 'created_at' => '2018-09-21 02:46:34', 'updated_at' => '2018-05-11 10:01:51', 'deleted_at' => null],
             ['id' => '2', 'name' => 'Current Events', 'slug' => 'current-events', 'status' => 'show', 'user_type' => 'App\\User', 'user_id' => '1', 'upload_folder' => null, 'created_at' => '2018-05-11 06:00:06', 'updated_at' => '2018-05-11 10:00:06', 'deleted_at' => null],
             ['id' => '3', 'name' => 'Sports', 'slug' => 'sports', 'status' => 'show', 'user_type' => 'App\\User', 'user_id' => '1', 'upload_folder' => null, 'created_at' => '2018-05-11 10:00:47', 'updated_at' => '2018-05-11 10:00:47', 'deleted_at' => null],

@@ -1,9 +1,9 @@
 <?php
 
-namespace Litecms\News\Policies;
+namespace gscms\News\Policies;
 
 use Litepie\User\Contracts\UserPolicy;
-use Litecms\News\Models\Comment;
+use gscms\News\Models\Comment;
 
 class CommentPolicy
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Litecms\News\Models;
+namespace gscms\News\Models;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Litepie\Database\Model;
@@ -20,7 +20,7 @@ class Comment extends Model
      *
      * @var array
      */
-     protected $config = 'litecms.news.comment.model';
+     protected $config = 'gscms.news.comment.model';
 
 
 }

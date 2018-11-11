@@ -1,6 +1,6 @@
 <?php
 
-namespace Litecms;
+namespace gscms;
 
 use DB;
 use Illuminate\Database\Seeder;
@@ -9,7 +9,7 @@ class NewsTagTableSeeder extends Seeder
 {
     public function run()
     {
-        DB::table(config('litecms.news.tag.model.table'))->insert([
+        DB::table(config('gscms.news.tag.model.table'))->insert([
             ['id' => '1', 'name' => 'Games', 'frequency' => '1', 'slug' => 'games', 'published' => 'yes', 'created_at' => '2018-05-11 06:07:10', 'updated_at' => '2018-05-11 10:07:10', 'deleted_at' => null],
             ['id' => '2', 'name' => 'Health', 'frequency' => '2', 'slug' => 'health', 'published' => 'yes', 'created_at' => '2018-05-11 10:07:22', 'updated_at' => '2018-05-11 10:07:22', 'deleted_at' => null],
             ['id' => '3', 'name' => 'Finance', 'frequency' => '1', 'slug' => 'finance', 'published' => 'yes', 'created_at' => '2018-05-11 10:07:33', 'updated_at' => '2018-05-11 10:07:33', 'deleted_at' => null],

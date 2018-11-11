@@ -1,9 +1,9 @@
 <?php
 
-namespace Litecms\News\Policies;
+namespace gscms\News\Policies;
 
 use Litepie\User\Contracts\UserPolicy;
-use Litecms\News\Models\Tag;
+use gscms\News\Models\Tag;
 
 class TagPolicy
 {

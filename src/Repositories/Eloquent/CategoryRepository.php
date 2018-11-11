@@ -1,8 +1,8 @@
 <?php
 
-namespace Litecms\News\Repositories\Eloquent;
+namespace gscms\News\Repositories\Eloquent;
 
-use Litecms\News\Interfaces\CategoryRepositoryInterface;
+use gscms\News\Interfaces\CategoryRepositoryInterface;
 use Litepie\Repository\Eloquent\BaseRepository;
 
 class CategoryRepository extends BaseRepository implements CategoryRepositoryInterface
@@ -11,7 +11,7 @@ class CategoryRepository extends BaseRepository implements CategoryRepositoryInt
 
     public function boot()
     {
-        $this->fieldSearchable = config('litecms.news.category.model.search');
+        $this->fieldSearchable = config('gscms.news.category.model.search');
 
     }
 
@@ -22,7 +22,7 @@ class CategoryRepository extends BaseRepository implements CategoryRepositoryInt
      */
     public function model()
     {
-        return config('litecms.news.category.model.model');
+        return config('gscms.news.category.model.model');
     }
 
     public function selectCategories()

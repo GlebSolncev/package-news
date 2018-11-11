@@ -1,12 +1,12 @@
 <?php
 
-namespace Litecms\News\Http\Controllers;
+namespace gscms\News\Http\Controllers;
 
 use App\Http\Controllers\ResourceController as BaseController;
 use Form;
-use Litecms\News\Http\Requests\TagRequest;
-use Litecms\News\Interfaces\TagRepositoryInterface;
-use Litecms\News\Models\Tag;
+use gscms\News\Http\Requests\TagRequest;
+use gscms\News\Interfaces\TagRepositoryInterface;
+use gscms\News\Models\Tag;
 
 /**
  * Resource controller class for tag.
@@ -27,7 +27,7 @@ class TagResourceController extends BaseController
         $this->repository = $tag;
         $this->repository
             ->pushCriteria(\Litepie\Repository\Criteria\RequestCriteria::class)
-            ->pushCriteria(\Litecms\News\Repositories\Criteria\TagResourceCriteria::class);
+            ->pushCriteria(\gscms\News\Repositories\Criteria\TagResourceCriteria::class);
     }
 
     /**
@@ -42,7 +42,7 @@ class TagResourceController extends BaseController
         if ($this->response->typeIs('json')) {
             $function = camel_case('get-' . $view);
             return $this->repository
-                ->setPresenter(\Litecms\News\Repositories\Presenter\TagPresenter::class)
+                ->setPresenter(\gscms\News\Repositories\Presenter\TagPresenter::class)
                 ->$function();
         }
 

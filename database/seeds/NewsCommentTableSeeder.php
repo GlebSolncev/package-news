@@ -1,6 +1,6 @@
 <?php
 
-namespace Litecms;
+namespace gscms;
 
 use DB;
 use Illuminate\Database\Seeder;
@@ -9,7 +9,7 @@ class NewsCommentTableSeeder extends Seeder
 {
     public function run()
     {
-        DB::table(config('litecms.news.comment.model.table'))->insert([
+        DB::table(config('gscms.news.comment.model.table'))->insert([
             
         ]);
 

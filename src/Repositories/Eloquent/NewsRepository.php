@@ -1,8 +1,8 @@
 <?php
 
-namespace Litecms\News\Repositories\Eloquent;
+namespace gscms\News\Repositories\Eloquent;
 
-use Litecms\News\Interfaces\NewsRepositoryInterface;
+use gscms\News\Interfaces\NewsRepositoryInterface;
 use Litepie\Repository\Eloquent\BaseRepository;
 
 class NewsRepository extends BaseRepository implements NewsRepositoryInterface
@@ -11,7 +11,7 @@ class NewsRepository extends BaseRepository implements NewsRepositoryInterface
 
     public function boot()
     {
-        $this->fieldSearchable = config('litecms.news.news.model.search');
+        $this->fieldSearchable = config('gscms.news.news.model.search');
 
     }
 
@@ -22,6 +22,6 @@ class NewsRepository extends BaseRepository implements NewsRepositoryInterface
      */
     public function model()
     {
-        return config('litecms.news.news.model.model');
+        return config('gscms.news.news.model.model');
     }
 }

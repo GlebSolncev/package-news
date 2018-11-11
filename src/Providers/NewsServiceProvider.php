@@ -1,6 +1,6 @@
 <?php
 
-namespace Litecms\News\Providers;
+namespace gscms\News\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -41,37 +41,37 @@ class NewsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../../config/config.php', 'litecms.news');
+        $this->mergeConfigFrom(__DIR__ . '/../../config/config.php', 'gscms.news');
 
         // Bind facade
-        $this->app->bind('litecms.news', function ($app) {
-            return $this->app->make('Litecms\News\News');
+        $this->app->bind('gscms.news', function ($app) {
+            return $this->app->make('gscms\News\News');
         });
 
         // Bind News to repository
         $this->app->bind(
-            'Litecms\News\Interfaces\NewsRepositoryInterface',
-            \Litecms\News\Repositories\Eloquent\NewsRepository::class
+            'gscms\News\Interfaces\NewsRepositoryInterface',
+            \gscms\News\Repositories\Eloquent\NewsRepository::class
         );
         // Bind Category to repository
         $this->app->bind(
-            'Litecms\News\Interfaces\CategoryRepositoryInterface',
-            \Litecms\News\Repositories\Eloquent\CategoryRepository::class
+            'gscms\News\Interfaces\CategoryRepositoryInterface',
+            \gscms\News\Repositories\Eloquent\CategoryRepository::class
         );
         // Bind Comment to repository
         $this->app->bind(
-            'Litecms\News\Interfaces\CommentRepositoryInterface',
-            \Litecms\News\Repositories\Eloquent\CommentRepository::class
+            'gscms\News\Interfaces\CommentRepositoryInterface',
+            \gscms\News\Repositories\Eloquent\CommentRepository::class
         );
         // Bind Tag to repository
         $this->app->bind(
-            'Litecms\News\Interfaces\TagRepositoryInterface',
-            \Litecms\News\Repositories\Eloquent\TagRepository::class
+            'gscms\News\Interfaces\TagRepositoryInterface',
+            \gscms\News\Repositories\Eloquent\TagRepository::class
         );
 
-        $this->app->register(\Litecms\News\Providers\AuthServiceProvider::class);
+        $this->app->register(\gscms\News\Providers\AuthServiceProvider::class);
 
-        $this->app->register(\Litecms\News\Providers\RouteServiceProvider::class);
+        $this->app->register(\gscms\News\Providers\RouteServiceProvider::class);
 
     }
 
@@ -82,7 +82,7 @@ class NewsServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ['litecms.news'];
+        return ['gscms.news'];
     }
 
     /**
@@ -93,7 +93,7 @@ class NewsServiceProvider extends ServiceProvider
     private function publishResources()
     {
         // Publish configuration file
-        $this->publishes([__DIR__ . '/../../config/config.php' => config_path('litecms/news.php')], 'config');
+        $this->publishes([__DIR__ . '/../../config/config.php' => config_path('gscms/news.php')], 'config');
 
         // Publish admin view
         $this->publishes([__DIR__ . '/../../resources/views' => base_path('resources/views/vendor/news')], 'view');

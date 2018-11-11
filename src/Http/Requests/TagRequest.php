@@ -1,6 +1,6 @@
 <?php
 
-namespace Litecms\News\Http\Requests;
+namespace gscms\News\Http\Requests;
 
 use App\Http\Requests\Request as FormRequest;
 

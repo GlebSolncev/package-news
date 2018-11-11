@@ -1,6 +1,6 @@
 <?php
 
-namespace Litecms\News\Facades;
+namespace gscms\News\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -13,6 +13,6 @@ class News extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'litecms.news';
+        return 'gscms.news';
     }
 }

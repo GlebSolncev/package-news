@@ -1,38 +1,12 @@
-Laravel package that provides news management facility for lavalite CMS.
+## GSCMS
 
-## Installation
+Для работы с данынм пакетом 
 
-Require this package with composer. 
+    composer require glebs/news
+    
+Данный пакет имеет CRUD новостей. Также имеет ряд нужных компонентов.
 
-    composer require litecms/news
+Работает на Framework: Laravel 5.5+
 
-Laravel 5.5 uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider.
+© Author Gleb Solncev.
 
-
-## Publishing
-
-**Configuration**
-
-    php artisan vendor:publish --provider="Litecms\News\Providers\NewsServiceProvider" --tag="config"
-
-**Language**
-
-    php artisan vendor:publish --provider="Litecms\News\Providers\NewsServiceProvider" --tag="lang"
-
-**Files**
-
-    php artisan vendor:publish --provider="Litecms\News\Providers\NewsServiceProvider" --tag="storage"
-
-### Views
-
-Publish views to resources\views\vendor directory
-
-    php artisan vendor:publish --provider="Litecms\News\Providers\NewsServiceProvider" --tag="view"
-
-Publishes admin view to admin theme
-
-    php artisan theme:publish --provider="Litecms\News\Providers\NewsServiceProvider" --view="admin" --theme="admin"
-
-Publishes public view to public theme
-
-    php artisan theme:publish --provider="Litecms\News\Providers\NewsServiceProvider" --view="public" --theme="public"

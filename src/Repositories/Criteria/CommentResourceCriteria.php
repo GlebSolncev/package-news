@@ -1,6 +1,6 @@
 <?php
 
-namespace Litecms\News\Repositories\Criteria;
+namespace gscms\News\Repositories\Criteria;
 
 use Litepie\Repository\Contracts\CriteriaInterface;
 use Litepie\Repository\Contracts\RepositoryInterface;

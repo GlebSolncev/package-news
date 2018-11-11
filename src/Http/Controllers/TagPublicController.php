@@ -1,9 +1,9 @@
 <?php
 
-namespace Litecms\News\Http\Controllers;
+namespace gscms\News\Http\Controllers;
 
 use App\Http\Controllers\PublicController as BaseController;
-use Litecms\News\Interfaces\TagRepositoryInterface;
+use gscms\News\Interfaces\TagRepositoryInterface;
 
 class TagPublicController extends BaseController
 {
@@ -12,7 +12,7 @@ class TagPublicController extends BaseController
     /**
      * Constructor.
      *
-     * @param type \Litecms\Tag\Interfaces\TagRepositoryInterface $tag
+     * @param type \gscms\Tag\Interfaces\TagRepositoryInterface $tag
      *
      * @return type
      */

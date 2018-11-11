@@ -1,13 +1,13 @@
 <?php
 
-namespace Litecms\News\Repositories\Presenter;
+namespace gscms\News\Repositories\Presenter;
 
 use League\Fractal\TransformerAbstract;
 use Hashids;
 
 class CategoryTransformer extends TransformerAbstract
 {
-    public function transform(\Litecms\News\Models\Category $category)
+    public function transform(\gscms\News\Models\Category $category)
     {
         return [
             'id'                => $category->getRouteKey(),

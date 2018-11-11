@@ -18,7 +18,7 @@ class CreateNewsTable extends Migration
         /*
          * Table: news
          */
-        Schema::create(config('litecms.news.news.model.table'), function ($table) {
+        Schema::create(config('gscms.news.news.model.table'), function ($table) {
             $table->increments('id');
             $table->integer('category_id')->nullable();
             $table->string('title', 250)->nullable();
@@ -46,6 +46,6 @@ class CreateNewsTable extends Migration
 
     public function down()
     {
-        Schema::drop(config('litecms.news.news.model.table'));
+        Schema::drop(config('gscms.news.news.model.table'));
     }
 }

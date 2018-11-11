@@ -1,6 +1,6 @@
 <?php
 
-namespace Litecms\News\Repositories\Presenter;
+namespace gscms\News\Repositories\Presenter;
 
 use Litepie\Repository\Presenter\FractalPresenter;
 
