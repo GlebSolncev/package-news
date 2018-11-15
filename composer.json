@@ -11,7 +11,8 @@
         }
     ],
     "require": {
-        "php": "^7.1.3"
+        "php": "^7.1.3",
+        "glebs/news": "dev-master"
     },
     "autoload": {
         "classmap": [
