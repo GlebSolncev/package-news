@@ -54,7 +54,7 @@ return [
      */
     'label'         => [
         'id'                         => 'Номер',
-        'name'                       => 'Наименование',
+        'name'                       => 'Наименование  Gleb',
         'frequency'                  => 'Frequency',
         'slug'                       => 'Slug',
         'published'                  => 'Статус',
